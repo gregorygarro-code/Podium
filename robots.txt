@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+# TODO (dominio): Sitemap: https://DOMINIO/sitemap.xml

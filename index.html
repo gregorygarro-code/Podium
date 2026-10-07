@@ -1,67 +1,223 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-CR">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>PODIUM · Hidratación sin pesadez</title>
-<meta name="description" content="Hidratación deportiva científica en polvo, formulada en Costa Rica con base del CITA-UCR y producida bajo estándares FDA y FSSC 22000.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;0,800;1,800;1,900&family=Russo+One&display=swap">
+<title>Electrolitos en polvo hechos en Costa Rica | PODIUM Hidratación Deportiva</title>
+<meta name="description" content="Electrolitos en polvo formulados en Costa Rica con el CITA-UCR. Hidratación deportiva sin pesadez para running, ciclismo, hiking y gimnasio. Envíos a todo Costa Rica.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#004173">
+<!-- TODO (dominio): agregar <link rel="canonical" href="https://DOMINIO/">, og:url y og:image con URL absoluta -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_CR">
+<meta property="og:site_name" content="PODIUM">
+<meta property="og:title" content="PODIUM · Electrolitos en polvo hechos en Costa Rica">
+<meta property="og:description" content="Hidratación deportiva sin pesadez, formulada con el CITA-UCR y producida bajo estándares FDA y FSSC 22000.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="fonts/montserrat-latin-900-italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/montserrat-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "PODIUM",
+  "description": "Hidratación deportiva científica en polvo, formulada en Costa Rica con base del CITA-UCR y producida bajo estándares FDA y FSSC 22000.",
+  "areaServed": { "@type": "Country", "name": "Costa Rica" }
+}
+</script>
+<!-- TODO (precio): activar cuando haya precio y URL definitivos.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "PODIUM Hidratación Deportiva en Polvo",
+  "brand": { "@type": "Brand", "name": "PODIUM" },
+  "description": "Electrolitos en polvo formulados en Costa Rica con base del CITA-UCR.",
+  "image": "https://DOMINIO/assets/producto.webp",
+  "offers": {
+    "@type": "Offer",
+    "price": "00000",
+    "priceCurrency": "CRC",
+    "availability": "https://schema.org/InStock",
+    "url": "https://DOMINIO/"
+  }
+}
+</script>
+-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué es PODIUM?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "PODIUM es hidratación deportiva en polvo: una mezcla de electrolitos formulada en Costa Rica con base científica del CITA-UCR y producida bajo estándares FDA y FSSC 22000."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuándo debo tomarlo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Antes, durante o después de entrenar. En sesiones largas o con mucho calor, tómalo durante el esfuerzo para reponer lo que pierdes con el sudor."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo se prepara?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Mezcla una porción en 500 ml de agua fría y agita hasta disolver."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Tiene azúcar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cada porción aporta 00 g de carbohidratos, mucho menos que una bebida deportiva típica, para que te hidrate sin caerte pesado."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿En qué se diferencia de un suero oral o una bebida deportiva?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Las bebidas deportivas suelen tener mucha azúcar y poco sodio. PODIUM está formulado para reponer electrolitos con precisión y sin pesadez estomacal, a precio local."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Puedo tomarlo todos los días?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, está pensado para deportistas que entrenan a diario. Si tienes una condición médica, como hipertensión o enfermedad renal, consulta a tu médico antes de consumir electrolitos."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Quién formuló PODIUM?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lo formulamos en Costa Rica con base científica del CITA-UCR, el Centro Nacional de Ciencia y Tecnología de Alimentos de la Universidad de Costa Rica."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Hacen envíos a todo Costa Rica?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, enviamos a las 7 provincias. En la GAM llega en 24 a 48 horas y al resto del país en 2 a 4 días hábiles."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué métodos de pago aceptan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SINPE Móvil y tarjetas de crédito o débito."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Dónde puedo comprar PODIUM?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "En esta página o por WhatsApp. Pronto también en tiendas y puntos de venta en Costa Rica."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
-<div class="page">
+<a class="skip" href="#main">Saltar al contenido</a>
 
-  <nav class="nav" aria-label="Principal">
-    <a href="#"><img class="nav__logo" src="assets/logo-podium-navy.png" alt="PODIUM"></a>
-    <div class="nav__links">
-      <a class="nav__link" href="#ciencia">Ciencia</a>
-      <a class="nav__link" href="#formula">Fórmula</a>
-      <a class="nav__link" href="#deportes">Deportes</a>
-      <a class="nav__link" href="#nosotros">Nosotros</a>
-      <a class="btn btn--navy nav__cta" href="#comprar">Comprar</a>
-    </div>
-  </nav>
+<!-- TODO: confirmar monto de envío gratis y métodos de pago -->
+<div class="announce"><span>Envíos a todo Costa Rica</span><span class="announce__more"> · Envío gratis desde ₡00.000</span><span class="announce__more"> · Paga con SINPE Móvil o tarjeta</span></div>
 
-  <!-- Hero variant: "hero--navy" (default) or "hero--waves". Override with ?hero=ondas -->
+<nav class="nav" aria-label="Principal">
+  <a href="#" aria-label="PODIUM, inicio"><img class="nav__logo" src="assets/logo-podium-navy.webp" alt="PODIUM" width="131" height="20"></a>
+  <div class="nav__links">
+    <a class="nav__link" href="#formula">Fórmula</a>
+    <a class="nav__link" href="#comparar">Comparar</a>
+    <a class="nav__link" href="#precios">Precios</a>
+    <a class="nav__link" href="#faq">Preguntas</a>
+    <a class="btn btn--navy nav__cta" href="#precios" data-buy data-track="nav_comprar">Comprar</a>
+  </div>
+</nav>
+
+<main id="main">
+
+  <!-- 1 · Hero de producto -->
   <header class="hero hero--navy" id="hero">
     <div class="hero__copy">
-      <div class="eyebrow">Hidratación deportiva · Hecho en Costa Rica</div>
-      <h1 class="display hero__title">Hidratación<br><span class="accent">sin pesadez</span></h1>
-      <p class="lede">Reposición electrolítica precisa y cero pesadez estomacal, sin sobreprecios de importación.</p>
-      <div class="hero__actions">
-        <a class="btn btn--lg hero__primary" href="#comprar">Comprar ahora</a>
-        <a class="btn btn--lg btn--outline hero__secondary" href="#formula">Ver fórmula</a>
+      <h1 class="hero__h1">
+        <span class="eyebrow">Electrolitos en polvo hechos en Costa Rica</span>
+        <span class="display hero__title">Hidratación <br><span class="accent">sin pesadez</span></span>
+      </h1>
+      <p class="lede">Reposición electrolítica precisa para running, ciclismo, hiking y gimnasio. Formulada con el CITA-UCR, a precio local.</p>
+      <!-- TODO (precio): precio y número de porciones reales -->
+      <div class="price">
+        <span class="price__amount">₡00.000</span>
+        <span class="price__meta">Caja de 00 porciones · ₡000 por porción</span>
       </div>
+      <div class="hero__actions">
+        <a class="btn btn--lg hero__primary" href="#precios" data-buy data-track="hero_comprar">Comprar ahora</a>
+        <a class="btn btn--lg btn--outline hero__secondary" href="#" data-wa data-track="hero_whatsapp">Pedir por WhatsApp</a>
+      </div>
+      <ul class="microtrust">
+        <li>Envío a las 7 provincias</li>
+        <li>SINPE Móvil y tarjeta</li>
+        <li>Garantía de satisfacción</li>
+      </ul>
     </div>
-    <div class="ph hero__media">foto de producto · sobre / bolsa</div>
+    <!-- TODO (foto): <img src="assets/producto.webp" alt="Caja y sobres de PODIUM, electrolitos en polvo" width="800" height="1000" fetchpriority="high"> -->
+    <div class="ph hero__media" role="img" aria-label="Foto del producto PODIUM">foto de producto · sobre / bolsa</div>
   </header>
 
   <div class="trust">
     <span>Base científica CITA-UCR</span><span>Estándares FDA</span><span>FSSC 22000</span><span>Formulado en Costa Rica</span>
   </div>
 
-  <section class="section ciencia" id="ciencia">
+  <!-- 2 · Problema -->
+  <section class="section problema" id="problema" aria-labelledby="problema-title">
     <div class="section__head">
-      <div class="kicker">01 · Ciencia</div>
-      <h2 class="display section__title">Ciencia local,<br>estándar global</h2>
+      <div class="kicker">El problema</div>
+      <h2 class="display section__title" id="problema-title">¿Te suena?</h2>
+    </div>
+    <div class="pains">
+      <div class="pain"><div class="pain__title">Te vacías a mitad del entreno</div><div class="pain__text">Con el sudor pierdes sodio y potasio. En el calor y la humedad de Costa Rica, más rápido.</div></div>
+      <div class="pain"><div class="pain__title">Las bebidas te caen pesadas</div><div class="pain__text">Mucha azúcar, mucho volumen y el estómago revuelto justo cuando más lo necesitas.</div></div>
+      <div class="pain"><div class="pain__title">Lo bueno es importado y caro</div><div class="pain__text">Pagas envío, impuestos y margen de importación por cada sobre.</div></div>
+    </div>
+  </section>
+
+  <!-- 3 · Solución -->
+  <section class="section ciencia" id="ciencia" aria-labelledby="ciencia-title">
+    <div class="section__head">
+      <div class="kicker">La solución</div>
+      <h2 class="display section__title" id="ciencia-title">Ciencia local,<br>estándar global</h2>
     </div>
     <div class="ciencia__body">
-      <p class="lede">Hidratación deportiva científica en polvo, formulada en Costa Rica con base del CITA-UCR y producida bajo estándares FDA y FSSC 22000.</p>
+      <p class="lede">PODIUM es hidratación deportiva en polvo, formulada en Costa Rica con base científica del CITA-UCR y producida bajo estándares FDA y FSSC 22000.</p>
       <div class="benefits">
-        <div class="benefit"><div class="benefit__title">Reposición precisa</div><div class="benefit__text">Electrolitos dosificados para lo que pierdes al entrenar.</div></div>
-        <div class="benefit"><div class="benefit__title">Cero pesadez</div><div class="benefit__text">Ligera en el estómago, durante y después del esfuerzo.</div></div>
-        <div class="benefit"><div class="benefit__title">Precio local</div><div class="benefit__text">Sin sobreprecios de importación.</div></div>
+        <div class="benefit"><h3 class="benefit__title">Reposición precisa</h3><div class="benefit__text">Electrolitos dosificados para lo que pierdes al entrenar.</div></div>
+        <div class="benefit"><h3 class="benefit__title">Cero pesadez</h3><div class="benefit__text">Ligera en el estómago, durante y después del esfuerzo.</div></div>
+        <div class="benefit"><h3 class="benefit__title">Precio local</h3><div class="benefit__text">Sin sobreprecios de importación.</div></div>
       </div>
     </div>
   </section>
 
-  <!-- TODO: replace 000 placeholders with the real formula values per serving -->
-  <section class="section formula" id="formula">
+  <!-- 4 · Fórmula. TODO: valores reales por porción -->
+  <section class="section formula" id="formula" aria-labelledby="formula-title">
     <div class="section__head">
-      <div class="kicker">02 · Fórmula</div>
-      <h2 class="display section__title">Por porción</h2>
+      <div class="kicker">Fórmula</div>
+      <h2 class="display section__title" id="formula-title">Por porción</h2>
     </div>
     <div class="stats">
       <div class="stat stat--brand"><div class="stat__value">000<span class="stat__unit">mg</span></div><div class="stat__label">Sodio</div></div>
@@ -71,26 +227,169 @@
     </div>
   </section>
 
-  <section class="section deportes" id="deportes">
+  <!-- 5 · Comparativa. TODO: confirmar cifras de PODIUM y precios de referencia -->
+  <section class="section comparar" id="comparar" aria-labelledby="comparar-title">
     <div class="section__head">
-      <div class="kicker">03 · Para quién</div>
-      <h2 class="display section__title">Constancia diaria</h2>
+      <div class="kicker">Comparar</div>
+      <h2 class="display section__title" id="comparar-title">PODIUM vs. lo de siempre</h2>
+    </div>
+    <div class="table-wrap">
+      <table class="compare">
+        <thead>
+          <tr><th scope="col"><span class="sr-only">Característica</span></th><th scope="col" class="compare__us">PODIUM</th><th scope="col">Bebida deportiva típica</th><th scope="col">Electrolitos importados</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Azúcar por porción</th><td class="compare__us">00 g</td><td>Alta</td><td>Variable</td></tr>
+          <tr><th scope="row">Sodio por porción</th><td class="compare__us">000 mg</td><td>Bajo</td><td>Variable</td></tr>
+          <tr><th scope="row">Ligera en el estómago</th><td class="compare__us">Sí</td><td>No siempre</td><td>Depende</td></tr>
+          <tr><th scope="row">Formulada en Costa Rica</th><td class="compare__us">Sí, con el CITA-UCR</td><td>No</td><td>No</td></tr>
+          <tr><th scope="row">Precio por porción</th><td class="compare__us">₡000</td><td>₡000</td><td>₡000</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <a class="btn btn--navy btn--lg section__cta" href="#precios" data-buy data-track="comparar_comprar">Probar PODIUM</a>
+  </section>
+
+  <!-- 6 · Cómo se usa. TODO: confirmar dosis -->
+  <section class="section uso" id="uso" aria-labelledby="uso-title">
+    <div class="section__head">
+      <div class="kicker">Cómo se usa</div>
+      <h2 class="display section__title" id="uso-title">Tres pasos</h2>
+    </div>
+    <ol class="steps">
+      <li class="step"><div class="step__num">01</div><h3 class="step__title">Mezcla</h3><p class="step__text">Una porción en 500 ml de agua fría.</p></li>
+      <li class="step"><div class="step__num">02</div><h3 class="step__title">Agita</h3><p class="step__text">Se disuelve en segundos, sin grumos.</p></li>
+      <li class="step"><div class="step__num">03</div><h3 class="step__title">Hidrátate</h3><p class="step__text">Antes, durante o después de entrenar.</p></li>
+    </ol>
+  </section>
+
+  <!-- 7 · Deportes -->
+  <section class="section deportes" id="deportes" aria-labelledby="deportes-title">
+    <div class="section__head">
+      <div class="kicker">Para quién</div>
+      <h2 class="display section__title" id="deportes-title">Constancia diaria</h2>
       <p>Para deportistas constantes que entrenan a diario e invierten de forma inteligente en su rendimiento.</p>
     </div>
     <div class="sports">
-      <div class="sport"><div class="ph sport__media">foto · Running</div><div class="display sport__name">Running</div></div>
-      <div class="sport"><div class="ph sport__media">foto · Ciclismo</div><div class="display sport__name">Ciclismo</div></div>
-      <div class="sport"><div class="ph sport__media">foto · Hiking</div><div class="display sport__name">Hiking</div></div>
-      <div class="sport"><div class="ph sport__media">foto · Gimnasio</div><div class="display sport__name">Gimnasio</div></div>
+      <div class="sport"><div class="ph sport__media">foto · Running</div><h3 class="display sport__name">Running</h3></div>
+      <div class="sport"><div class="ph sport__media">foto · Ciclismo</div><h3 class="display sport__name">Ciclismo</h3></div>
+      <div class="sport"><div class="ph sport__media">foto · Hiking</div><h3 class="display sport__name">Hiking</h3></div>
+      <div class="sport"><div class="ph sport__media">foto · Gimnasio</div><h3 class="display sport__name">Gimnasio</h3></div>
     </div>
   </section>
 
-  <!-- TODO: review mission, vision and values copy with the PODIUM team -->
-  <section class="section nosotros" id="nosotros">
+  <!-- 8 · Reseñas. TODO: SOLO reseñas reales (nombre, deporte y foto con permiso). No publicar testimonios inventados. -->
+  <section class="section resenas" id="resenas" aria-labelledby="resenas-title">
+    <div class="section__head">
+      <div class="kicker">Reseñas</div>
+      <h2 class="display section__title" id="resenas-title">Lo dicen en la ruta</h2>
+    </div>
+    <div class="reviews">
+      <figure class="review"><blockquote class="review__quote ph">reseña real de cliente</blockquote><figcaption class="review__who">Nombre · Running · Ciudad</figcaption></figure>
+      <figure class="review"><blockquote class="review__quote ph">reseña real de cliente</blockquote><figcaption class="review__who">Nombre · Ciclismo · Ciudad</figcaption></figure>
+      <figure class="review"><blockquote class="review__quote ph">reseña real de cliente</blockquote><figcaption class="review__who">Nombre · Hiking · Ciudad</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- 9 · Precios / paquetes. TODO: precios reales y enlaces de compra -->
+  <section class="section precios" id="precios" aria-labelledby="precios-title">
+    <div class="section__head">
+      <div class="kicker">Precios</div>
+      <h2 class="display section__title" id="precios-title">Elige tu plan</h2>
+    </div>
+    <div class="plans">
+      <article class="plan">
+        <h3 class="plan__name">1 caja</h3>
+        <p class="plan__desc">Para probar. 00 porciones.</p>
+        <div class="plan__price">₡00.000</div>
+        <div class="plan__unit">₡000 por porción</div>
+        <a class="btn btn--outline-plan btn--lg" href="#" data-buy data-track="plan_1">Comprar</a>
+      </article>
+      <article class="plan plan--featured">
+        <div class="plan__badge">Más vendido</div>
+        <h3 class="plan__name">Pack mensual</h3>
+        <p class="plan__desc">3 cajas, un mes de entrenos. 00 porciones.</p>
+        <div class="plan__price">₡00.000</div>
+        <div class="plan__unit">₡000 por porción · ahorras 00%</div>
+        <a class="btn btn--cyan btn--lg" href="#" data-buy data-track="plan_pack">Comprar pack</a>
+      </article>
+      <article class="plan">
+        <h3 class="plan__name">Suscripción</h3>
+        <p class="plan__desc">Te llega cada mes. Pausa o cancela cuando quieras.</p>
+        <div class="plan__price">-15%</div>
+        <div class="plan__unit">sobre el precio de cada envío</div>
+        <a class="btn btn--outline-plan btn--lg" href="#" data-buy data-track="plan_suscripcion">Suscribirme</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- 10 · Envíos y garantía. TODO: confirmar tiempos, transportista y política -->
+  <section class="section envios" id="envios" aria-labelledby="envios-title">
+    <h2 class="sr-only" id="envios-title">Envíos, pagos y garantía</h2>
+    <div class="assurances">
+      <div class="assurance"><h3 class="assurance__title">Envíos a todo Costa Rica</h3><p class="assurance__text">GAM en 24 a 48 horas. Resto del país en 2 a 4 días hábiles.</p></div>
+      <div class="assurance"><h3 class="assurance__title">Pago fácil</h3><p class="assurance__text">SINPE Móvil, tarjeta de crédito o débito.</p></div>
+      <div class="assurance"><h3 class="assurance__title">Garantía</h3><p class="assurance__text">Si no te convence, te devolvemos tu dinero.</p></div>
+    </div>
+  </section>
+
+  <!-- 11 · FAQ -->
+  <section class="section faq" id="faq" aria-labelledby="faq-title">
+    <div class="section__head">
+      <div class="kicker">Preguntas frecuentes</div>
+      <h2 class="display section__title" id="faq-title">Lo que nos preguntan</h2>
+      <p>¿No encuentras tu respuesta? <a href="#" data-wa data-track="faq_whatsapp">Escríbenos por WhatsApp</a>.</p>
+    </div>
+    <div class="faq__list">
+      <details class="faq__item" open>
+        <summary class="faq__q">¿Qué es PODIUM?</summary>
+        <div class="faq__a"><p>PODIUM es hidratación deportiva en polvo: una mezcla de electrolitos formulada en Costa Rica con base científica del CITA-UCR y producida bajo estándares FDA y FSSC 22000.</p></div>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q">¿Cuándo debo tomarlo?</summary>
+        <div class="faq__a"><p>Antes, durante o después de entrenar. En sesiones largas o con mucho calor, tómalo durante el esfuerzo para reponer lo que pierdes con el sudor.</p></div>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q">¿Cómo se prepara?</summary>
+        <div class="faq__a"><p>Mezcla una porción en 500 ml de agua fría y agita hasta disolver.</p></div>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q">¿Tiene azúcar?</summary>
+        <div class="faq__a"><p>Cada porción aporta 00 g de carbohidratos, mucho menos que una bebida deportiva típica, para que te hidrate sin caerte pesado.</p></div>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q">¿En qué se diferencia de un suero oral o una bebida deportiva?</summary>
+        <div class="faq__a"><p>Las bebidas deportivas suelen tener mucha azúcar y poco sodio. PODIUM está formulado para reponer electrolitos con precisión y sin pesadez estomacal, a precio local.</p></div>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q">¿Puedo tomarlo todos los días?</summary>
+        <div class="faq__a"><p>Sí, está pensado para deportistas que entrenan a diario. Si tienes una condición médica, como hipertensión o enfermedad renal, consulta a tu médico antes de consumir electrolitos.</p></div>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q">¿Quién formuló PODIUM?</summary>
+        <div class="faq__a"><p>Lo formulamos en Costa Rica con base científica del CITA-UCR, el Centro Nacional de Ciencia y Tecnología de Alimentos de la Universidad de Costa Rica.</p></div>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q">¿Hacen envíos a todo Costa Rica?</summary>
+        <div class="faq__a"><p>Sí, enviamos a las 7 provincias. En la GAM llega en 24 a 48 horas y al resto del país en 2 a 4 días hábiles.</p></div>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q">¿Qué métodos de pago aceptan?</summary>
+        <div class="faq__a"><p>SINPE Móvil y tarjetas de crédito o débito.</p></div>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q">¿Dónde puedo comprar PODIUM?</summary>
+        <div class="faq__a"><p>En esta página o por WhatsApp. Pronto también en tiendas y puntos de venta en Costa Rica.</p></div>
+      </details>
+    </div>
+  </section>
+
+  <!-- 12 · Nosotros. TODO: revisar textos con el equipo -->
+  <section class="section nosotros" id="nosotros" aria-labelledby="nosotros-title">
     <div class="nosotros__intro">
       <div class="section__head">
-        <div class="kicker">04 · Nosotros</div>
-        <h2 class="display section__title">Quiénes somos</h2>
+        <div class="kicker">Nosotros</div>
+        <h2 class="display section__title" id="nosotros-title">Quiénes somos</h2>
       </div>
       <div class="nosotros__story">
         <p class="lede">PODIUM nace de una pregunta simple: ¿por qué la hidratación deportiva que funciona tiene que venir de afuera y costar más?</p>
@@ -100,11 +399,11 @@
 
     <div class="purpose">
       <article class="purpose__card purpose__card--brand">
-        <div class="kicker">Misión</div>
+        <h3 class="kicker">Misión</h3>
         <p>Darle a cada deportista constante una hidratación precisa, ligera y respaldada por ciencia, formulada en Costa Rica y a un precio justo.</p>
       </article>
       <article class="purpose__card">
-        <div class="kicker">Visión</div>
+        <h3 class="kicker">Visión</h3>
         <p>Ser la hidratación deportiva de referencia en la región y demostrar que la ciencia local compite con cualquier marca importada.</p>
       </article>
     </div>
@@ -112,23 +411,26 @@
     <div class="values-block">
       <h3 class="display values-block__title">Nuestros valores</h3>
       <div class="values">
-      <div class="value"><div class="value__num">01</div><div class="value__title">Ciencia primero</div><div class="value__text">Cada fórmula parte de la investigación, no de las tendencias.</div></div>
-      <div class="value"><div class="value__num">02</div><div class="value__title">Transparencia</div><div class="value__text">Te decimos qué lleva cada porción, en mg y g, sin letra pequeña.</div></div>
-      <div class="value"><div class="value__num">03</div><div class="value__title">Calidad certificada</div><div class="value__text">Producimos bajo estándares FDA y FSSC 22000.</div></div>
-      <div class="value"><div class="value__num">04</div><div class="value__title">Orgullo local</div><div class="value__text">Formulamos en Costa Rica, con talento e instituciones de aquí.</div></div>
-      <div class="value"><div class="value__num">05</div><div class="value__title">Precio justo</div><div class="value__text">Rendimiento de primer nivel sin sobreprecios de importación.</div></div>
-      <div class="value"><div class="value__num">06</div><div class="value__title">Constancia</div><div class="value__text">Acompañamos a quien entrena todos los días, no solo el día de la carrera.</div></div>
+        <div class="value"><div class="value__num">01</div><div class="value__title">Ciencia primero</div><div class="value__text">Cada fórmula parte de la investigación, no de las tendencias.</div></div>
+        <div class="value"><div class="value__num">02</div><div class="value__title">Transparencia</div><div class="value__text">Te decimos qué lleva cada porción, en mg y g, sin letra pequeña.</div></div>
+        <div class="value"><div class="value__num">03</div><div class="value__title">Calidad certificada</div><div class="value__text">Producimos bajo estándares FDA y FSSC 22000.</div></div>
+        <div class="value"><div class="value__num">04</div><div class="value__title">Orgullo local</div><div class="value__text">Formulamos en Costa Rica, con talento e instituciones de aquí.</div></div>
+        <div class="value"><div class="value__num">05</div><div class="value__title">Precio justo</div><div class="value__text">Rendimiento de primer nivel sin sobreprecios de importación.</div></div>
+        <div class="value"><div class="value__num">06</div><div class="value__title">Constancia</div><div class="value__text">Acompañamos a quien entrena todos los días, no solo el día de la carrera.</div></div>
       </div>
     </div>
   </section>
 
-  <section class="section cta" id="comprar">
-    <h2 class="display cta__title">Entrena hoy.<br><span class="accent">Hidrátate bien.</span></h2>
+  <!-- 13 · CTA final -->
+  <section class="section cta" id="comprar" aria-labelledby="cta-title">
+    <h2 class="display cta__title" id="cta-title">Entrena hoy.<br><span class="accent">Hidrátate bien.</span></h2>
     <div class="cta__actions">
-      <!-- TODO: point to the store / checkout URL -->
-      <a class="btn btn--cyan btn--xl" href="#">Comprar ahora</a>
+      <div class="cta__buttons">
+        <a class="btn btn--cyan btn--xl" href="#precios" data-buy data-track="cta_comprar">Comprar ahora</a>
+        <a class="btn btn--xl btn--outline btn--outline-white" href="#" data-wa data-track="cta_whatsapp">WhatsApp</a>
+      </div>
       <form class="subscribe" id="subscribe">
-        <label class="subscribe__label" for="mail">Recibe novedades</label>
+        <label class="subscribe__label" for="mail">Recibe novedades y un descuento en tu primera compra</label>
         <div class="subscribe__row">
           <input class="subscribe__input" id="mail" name="email" type="email" required placeholder="tu@correo.com" autocomplete="email">
           <button class="subscribe__btn" type="submit">Suscribirme</button>
@@ -136,25 +438,43 @@
       </form>
     </div>
   </section>
+</main>
 
-  <footer class="footer">
-    <div class="footer__top">
-      <img class="footer__logo" src="assets/logo-podium-white.png" alt="PODIUM">
-      <!-- TODO: replace # with the real PODIUM profile URLs -->
-      <nav class="social" aria-label="Redes sociales">
-        <a class="social__link" href="#" target="_blank" rel="noopener">Instagram</a>
-        <a class="social__link" href="#" target="_blank" rel="noopener">TikTok</a>
-        <a class="social__link" href="#" target="_blank" rel="noopener">Facebook</a>
-        <a class="social__link" href="#" target="_blank" rel="noopener">Strava</a>
-        <a class="social__link" href="#" target="_blank" rel="noopener">WhatsApp</a>
-      </nav>
-    </div>
-    <div class="footer__bottom">
-      <div class="footer__text">Formulado en Costa Rica · CITA-UCR · FDA · FSSC 22000</div>
-      <div class="footer__text">© <span id="year">2026</span> PODIUM</div>
-    </div>
-  </footer>
+<footer class="footer">
+  <div class="footer__top">
+    <img class="footer__logo" src="assets/logo-podium-white.webp" alt="PODIUM" width="105" height="16" loading="lazy">
+    <!-- TODO: URLs reales de cada perfil -->
+    <nav class="social" aria-label="Redes sociales">
+      <a class="social__link" href="#" target="_blank" rel="noopener">Instagram</a>
+      <a class="social__link" href="#" target="_blank" rel="noopener">TikTok</a>
+      <a class="social__link" href="#" target="_blank" rel="noopener">Facebook</a>
+      <a class="social__link" href="#" target="_blank" rel="noopener">Strava</a>
+      <a class="social__link" href="#" data-wa target="_blank" rel="noopener">WhatsApp</a>
+    </nav>
+  </div>
+  <div class="footer__mid">
+    <p class="footer__text">Electrolitos e hidratación deportiva en polvo con envío a San José, Alajuela, Cartago, Heredia, Guanacaste, Puntarenas y Limón.</p>
+    <!-- TODO: páginas de políticas -->
+    <nav class="footer__links" aria-label="Información">
+      <a href="#envios">Envíos</a>
+      <a href="#faq">Preguntas frecuentes</a>
+      <a href="#">Política de devoluciones</a>
+      <a href="#">Privacidad</a>
+    </nav>
+  </div>
+  <div class="footer__bottom">
+    <div class="footer__text">Formulado en Costa Rica · CITA-UCR · FDA · FSSC 22000</div>
+    <div class="footer__text">© <span id="year">2026</span> PODIUM</div>
+  </div>
+</footer>
+
+<!-- Barra fija de compra (móvil) -->
+<div class="buybar" id="buybar" aria-hidden="true">
+  <div class="buybar__price">₡00.000</div>
+  <a class="btn btn--cyan buybar__btn" href="#precios" data-buy data-track="buybar_comprar" tabindex="-1">Comprar</a>
+  <a class="buybar__wa" href="#" data-wa data-track="buybar_whatsapp" tabindex="-1">WhatsApp</a>
 </div>
-<script src="main.js"></script>
+
+<script src="main.js" defer></script>
 </body>
 </html>
