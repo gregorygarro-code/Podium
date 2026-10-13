@@ -156,7 +156,7 @@ a:hover { color: var(--podium-cyan); }
 
 .hero--navy { background: var(--podium-navy); color: var(--podium-white); }
 .hero--navy .eyebrow { color: var(--podium-cyan); }
-.hero--navy .hero__title { font-size: clamp(min(52px, 11.5vw), 8vw, 112px); } /* min shrinks below ~450px so "HIDRATACIÓN" fits */
+.hero--navy .hero__title { font-size: clamp(min(52px, 11.5vw), 6vw, 96px); } /* min shrinks below ~450px so "HIDRATACIÓN" fits */
 .hero--navy .hero__media {
   background: repeating-linear-gradient(135deg, rgba(255,255,255,.06) 0 12px, transparent 12px 24px);
   border: 2px dashed rgba(182,255,255,.4);
@@ -603,3 +603,90 @@ h3 { margin: 0; }
   .buybar__wa { color: var(--podium-white); font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; text-decoration: underline; text-underline-offset: 3px; }
   .footer { padding-bottom: 96px; }
 }
+
+/* =================== Prelanzamiento ("Muy pronto") =================== */
+.soon {
+  font-family: var(--font-accent);
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--podium-cyan);
+  font-size: clamp(30px, 3vw, 38px);
+  line-height: 1;
+}
+.soon--pill {
+  align-self: flex-start;
+  font-size: 13px;
+  letter-spacing: .1em;
+  color: var(--podium-navy);
+  background: var(--podium-cyan);
+  padding: 8px 12px;
+  border-radius: var(--radius-s);
+}
+.stat__value--soon { font-size: clamp(26px, 2.6vw, 34px); padding-top: 10px; color: var(--podium-cyan); }
+.stat--brand .stat__value--soon { color: var(--podium-ice); }
+.formula__note { margin: 4px 0 0; font-size: 15px; font-weight: 600; color: var(--podium-gray-600); max-width: 420px; }
+.plan__price.soon { font-size: 30px; }
+.plan--featured .plan__price.soon { color: var(--podium-ice); }
+.buybar__price { font-family: var(--font-accent); font-weight: 400; text-transform: uppercase; font-size: 16px; color: var(--podium-ice); }
+
+/* Ilustración del empaque en el hero */
+.hero .hero__mock { margin: 0; display: flex; align-items: center; justify-content: center; background: none; border: 0; padding: 0; aspect-ratio: auto; }
+.hero__mock svg { width: 100%; max-width: 460px; height: auto; display: block; }
+.hero--waves .hero__mock circle:first-of-type { fill: var(--podium-navy); }
+
+/* Tarjetas ilustradas de deportes */
+.sport__art {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 3 / 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 6px;
+  padding: 24px;
+}
+.sport__art::before {
+  content: "";
+  position: absolute; inset: 0;
+  background: url(assets/pattern-waves-alpha.webp) left center / auto 100% repeat-x;
+  opacity: .12;
+  pointer-events: none;
+}
+.sport__art > * { position: relative; }
+.sport__art--navy { background-color: var(--podium-navy); color: var(--podium-white); }
+.sport__art--cyan { background-color: var(--podium-cyan); color: var(--podium-navy); }
+.sport__art--ice  { background-color: var(--podium-ice);  color: var(--podium-navy); }
+.sport__art--ink  { background-color: var(--podium-ink);  color: var(--podium-white); }
+.sport__art--cyan::before, .sport__art--ice::before { opacity: .45; }
+.sport__num { position: absolute; top: 24px; left: 24px; font-family: var(--font-accent); font-size: 14px; }
+.sport__art--navy .sport__num, .sport__art--ink .sport__num { color: var(--podium-cyan); }
+.sport__fig { font-family: var(--font-accent); font-size: clamp(44px, 4.4vw, 64px); line-height: .95; }
+.sport__cap { font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; opacity: .85; }
+.sport__logo { position: absolute; top: 26px; right: 24px; width: 92px; height: auto; }
+
+/* Banda de marca en movimiento */
+.band { background: var(--podium-navy); overflow: hidden; padding: 18px 0; }
+.band__track { display: flex; width: max-content; animation: band 28s linear infinite; }
+.band__item {
+  display: flex; align-items: center; gap: 16px; padding-right: 48px;
+  color: var(--podium-cyan); font-weight: 900; font-style: italic; text-transform: uppercase;
+  font-size: 18px; white-space: nowrap;
+}
+.band__item img { height: 18px; width: auto; }
+@keyframes band { to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) { .band__track { animation: none; } }
+
+/* Misión con logo */
+.purpose__logo { width: 105px; height: auto; }
+
+/* CTA final con marca de agua */
+.cta { position: relative; overflow: hidden; }
+.cta > * { position: relative; }
+.cta__watermark {
+  position: absolute !important;
+  right: -6%; bottom: -8%;
+  width: min(1100px, 90%); height: auto;
+  opacity: .06;
+  pointer-events: none;
+}
+.cta__head { display: flex; flex-direction: column; gap: 20px; }

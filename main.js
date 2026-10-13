@@ -43,11 +43,11 @@ var CONFIG = {
     if (el) window.dataLayer.push({ event: 'cta_click', cta: el.getAttribute('data-track') });
   });
 
-  // Barra fija de compra en móvil: aparece cuando el hero sale de pantalla
-  // y se oculta en la sección de precios y en el cierre, donde ya hay botones.
+  // Barra fija en móvil: aparece cuando el hero sale de pantalla
+  // y se oculta en precios y en la lista de lanzamiento, donde ya hay botones.
   var buybar = document.getElementById('buybar');
   var hero = document.getElementById('hero');
-  var hiders = [hero, document.getElementById('precios'), document.getElementById('comprar')];
+  var hiders = [hero, document.getElementById('precios'), document.getElementById('lanzamiento')].filter(Boolean);
   var visible = new Set();
   function setBar(show) {
     buybar.classList.toggle('is-visible', show);
@@ -69,6 +69,6 @@ var CONFIG = {
   form.addEventListener('submit', function (e) {
     e.preventDefault();
     form.querySelector('button').textContent = '¡Listo!';
-    window.dataLayer.push({ event: 'newsletter_signup' });
+    window.dataLayer.push({ event: 'waitlist_signup' });
   });
 })();

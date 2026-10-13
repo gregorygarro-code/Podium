@@ -13,6 +13,11 @@ En `main.js`, objeto `CONFIG`:
 
 Cada clic en un botón con `data-track` se envía a `window.dataLayer` como `cta_click`, listo para GA4 o Google Tag Manager.
 
+## Modo prelanzamiento
+Mientras no haya producto a la venta, precios, fórmula y planes muestran "Muy pronto" y los botones llevan a la lista de lanzamiento (`#lanzamiento`).
+La sección de reseñas está oculta con el atributo `hidden`; quitarlo cuando haya reseñas reales.
+El empaque del hero y las tarjetas de deportes son ilustraciones de marca originales; reemplazarlas por fotos reales cuando existan.
+
 ## Pendientes (buscar `TODO` en el código)
 - Precio, porciones y fórmula real (mg por porción).
 - Fotos de producto y de deportes.

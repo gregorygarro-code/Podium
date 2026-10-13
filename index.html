@@ -71,7 +71,7 @@
       "name": "¿Cómo se prepara?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Mezcla una porción en 500 ml de agua fría y agita hasta disolver."
+        "text": "Mezcla una porción en agua fría y agita hasta disolver. La medida exacta viene indicada en el empaque."
       }
     },
     {
@@ -79,7 +79,7 @@
       "name": "¿Tiene azúcar?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Cada porción aporta 00 g de carbohidratos, mucho menos que una bebida deportiva típica, para que te hidrate sin caerte pesado."
+        "text": "Publicaremos la información nutricional completa muy pronto. Está formulado para hidratarte sin caerte pesado, con mucho menos azúcar que una bebida deportiva típica."
       }
     },
     {
@@ -127,7 +127,7 @@
       "name": "¿Dónde puedo comprar PODIUM?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "En esta página o por WhatsApp. Pronto también en tiendas y puntos de venta en Costa Rica."
+        "text": "Muy pronto, en esta página y por WhatsApp. Únete a la lista de lanzamiento y te avisamos primero."
       }
     }
   ]
@@ -137,8 +137,8 @@
 <body>
 <a class="skip" href="#main">Saltar al contenido</a>
 
-<!-- TODO: confirmar monto de envío gratis y métodos de pago -->
-<div class="announce"><span>Envíos a todo Costa Rica</span><span class="announce__more"> · Envío gratis desde ₡00.000</span><span class="announce__more"> · Paga con SINPE Móvil o tarjeta</span></div>
+<!-- Prelanzamiento: cambiar a envíos y pagos cuando el producto esté a la venta -->
+<div class="announce"><span>Muy pronto: lanzamiento de PODIUM</span><span class="announce__more"> · Únete a la lista y sé de los primeros</span><span class="announce__more"> · Hecho en Costa Rica</span></div>
 
 <nav class="nav" aria-label="Principal">
   <a href="#" aria-label="PODIUM, inicio"><img class="nav__logo" src="assets/logo-podium-navy.webp" alt="PODIUM" width="131" height="20"></a>
@@ -147,7 +147,7 @@
     <a class="nav__link" href="#comparar">Comparar</a>
     <a class="nav__link" href="#precios">Precios</a>
     <a class="nav__link" href="#faq">Preguntas</a>
-    <a class="btn btn--navy nav__cta" href="#precios" data-buy data-track="nav_comprar">Comprar</a>
+    <a class="btn btn--navy nav__cta" href="#lanzamiento" data-track="nav_avisame">Avísame</a>
   </div>
 </nav>
 
@@ -161,23 +161,66 @@
         <span class="display hero__title">Hidratación <br><span class="accent">sin pesadez</span></span>
       </h1>
       <p class="lede">Reposición electrolítica precisa para running, ciclismo, hiking y gimnasio. Formulada con el CITA-UCR, a precio local.</p>
-      <!-- TODO (precio): precio y número de porciones reales -->
+      <!-- TODO (precio): reemplazar "Muy pronto" por el precio y las porciones reales -->
       <div class="price">
-        <span class="price__amount">₡00.000</span>
-        <span class="price__meta">Caja de 00 porciones · ₡000 por porción</span>
+        <span class="soon">Muy pronto</span>
+        <span class="price__meta">Precio de lanzamiento y presentaciones muy pronto</span>
       </div>
       <div class="hero__actions">
-        <a class="btn btn--lg hero__primary" href="#precios" data-buy data-track="hero_comprar">Comprar ahora</a>
+        <a class="btn btn--lg hero__primary" href="#lanzamiento" data-track="hero_avisame">Avísame del lanzamiento</a>
         <a class="btn btn--lg btn--outline hero__secondary" href="#" data-wa data-track="hero_whatsapp">Pedir por WhatsApp</a>
       </div>
       <ul class="microtrust">
-        <li>Envío a las 7 provincias</li>
-        <li>SINPE Móvil y tarjeta</li>
-        <li>Garantía de satisfacción</li>
+        <li>Formulado con el CITA-UCR</li>
+        <li>Estándares FDA y FSSC 22000</li>
+        <li>Hecho en Costa Rica</li>
       </ul>
     </div>
-    <!-- TODO (foto): <img src="assets/producto.webp" alt="Caja y sobres de PODIUM, electrolitos en polvo" width="800" height="1000" fetchpriority="high"> -->
-    <div class="ph hero__media" role="img" aria-label="Foto del producto PODIUM">foto de producto · sobre / bolsa</div>
+    <!-- Ilustración del empaque (original, sin derechos de terceros). TODO (foto): reemplazar por la foto real del producto -->
+    <figure class="hero__media hero__mock" aria-label="Ilustración del empaque de PODIUM, muy pronto">
+      <svg viewBox="0 0 400 500" role="img" aria-hidden="true" focusable="false">
+        <defs>
+          <clipPath id="pouch-clip"><path d="M95 78h210q10 0 10 10v352q0 22-22 22H107q-22 0-22-22V88q0-10 10-10z"/></clipPath>
+          <pattern id="waves" width="290" height="95" patternUnits="userSpaceOnUse"><image href="assets/pattern-waves.webp" width="290" height="95"/></pattern>
+        </defs>
+        <circle cx="200" cy="260" r="185" fill="#b6ffff" opacity=".07"/>
+        <ellipse cx="200" cy="470" rx="150" ry="14" fill="#022a4a" opacity=".55"/>
+        <!-- stick izquierdo -->
+        <g transform="rotate(-14 70 330)">
+          <rect x="38" y="190" width="64" height="270" rx="6" fill="#0cb7f2"/>
+          <rect x="38" y="190" width="64" height="18" rx="4" fill="#004173" opacity=".25"/>
+          <image href="assets/logo-podium-navy.webp" x="-36" y="306" width="210" height="32" transform="rotate(-90 70 322)"/>
+        </g>
+        <!-- bolsa -->
+        <g clip-path="url(#pouch-clip)">
+          <rect x="85" y="78" width="230" height="384" fill="#ffffff"/>
+          <rect x="85" y="78" width="230" height="384" fill="url(#waves)"/>
+          <rect x="85" y="78" width="230" height="34" fill="#004173"/>
+          <rect x="85" y="300" width="230" height="62" fill="#0cb7f2"/>
+        </g>
+        <path d="M85 98l8 5-8 5zM315 98l-8 5 8 5z" fill="#ffffff"/>
+        <rect x="120" y="178" width="160" height="66" fill="#ffffff"/>
+        <image href="assets/logo-podium-navy.webp" x="128" y="196" width="144" height="22"/>
+        <text x="200" y="236" text-anchor="middle" font-family="Montserrat, sans-serif" font-weight="800" font-style="italic" font-size="10" letter-spacing="1.5" fill="#004173">HIDRATACIÓN DEPORTIVA</text>
+        <text x="205" y="327" text-anchor="middle" font-family="Montserrat, sans-serif" font-weight="900" font-style="italic" font-size="16" fill="#004173">ELECTROLITOS</text>
+        <text x="205" y="347" text-anchor="middle" font-family="Montserrat, sans-serif" font-weight="900" font-style="italic" font-size="16" fill="#004173">EN POLVO</text>
+        <rect x="134" y="418" width="142" height="18" fill="#ffffff"/>
+        <text x="205" y="431" text-anchor="middle" font-family="Montserrat, sans-serif" font-weight="700" font-size="8.5" letter-spacing="1.5" fill="#004173">HECHO EN COSTA RICA</text>
+        <!-- stick derecho -->
+        <g transform="rotate(10 336 340)">
+          <rect x="304" y="210" width="64" height="260" rx="6" fill="#004173"/>
+          <rect x="304" y="210" width="64" height="18" rx="4" fill="#0cb7f2"/>
+          <image href="assets/logo-podium-ice.webp" x="231" y="326" width="210" height="32" transform="rotate(-90 336 342)"/>
+        </g>
+        <!-- sello -->
+        <g transform="rotate(12 318 92)">
+          <circle cx="318" cy="92" r="54" fill="#0cb7f2"/>
+          <circle cx="318" cy="92" r="46" fill="none" stroke="#004173" stroke-width="1.5" stroke-dasharray="3 4"/>
+          <text x="318" y="88" text-anchor="middle" font-family="'Russo One', sans-serif" font-size="17" fill="#004173">MUY</text>
+          <text x="318" y="108" text-anchor="middle" font-family="'Russo One', sans-serif" font-size="17" fill="#004173">PRONTO</text>
+        </g>
+      </svg>
+    </figure>
   </header>
 
   <div class="trust">
@@ -213,17 +256,18 @@
     </div>
   </section>
 
-  <!-- 4 · Fórmula. TODO: valores reales por porción -->
+  <!-- 4 · Fórmula. TODO: reemplazar "Muy pronto" por los valores reales por porción -->
   <section class="section formula" id="formula" aria-labelledby="formula-title">
     <div class="section__head">
       <div class="kicker">Fórmula</div>
       <h2 class="display section__title" id="formula-title">Por porción</h2>
+      <p class="formula__note">Estamos afinando los últimos detalles. Publicaremos la fórmula completa muy pronto.</p>
     </div>
     <div class="stats">
-      <div class="stat stat--brand"><div class="stat__value">000<span class="stat__unit">mg</span></div><div class="stat__label">Sodio</div></div>
-      <div class="stat"><div class="stat__value">000<span class="stat__unit">mg</span></div><div class="stat__label">Potasio</div></div>
-      <div class="stat"><div class="stat__value">000<span class="stat__unit">mg</span></div><div class="stat__label">Magnesio</div></div>
-      <div class="stat"><div class="stat__value">00<span class="stat__unit">g</span></div><div class="stat__label">Carbohidratos</div></div>
+      <div class="stat stat--brand"><div class="stat__value stat__value--soon">Muy pronto</div><div class="stat__label">Sodio</div></div>
+      <div class="stat"><div class="stat__value stat__value--soon">Muy pronto</div><div class="stat__label">Potasio</div></div>
+      <div class="stat"><div class="stat__value stat__value--soon">Muy pronto</div><div class="stat__label">Magnesio</div></div>
+      <div class="stat"><div class="stat__value stat__value--soon">Muy pronto</div><div class="stat__label">Carbohidratos</div></div>
     </div>
   </section>
 
@@ -239,15 +283,15 @@
           <tr><th scope="col"><span class="sr-only">Característica</span></th><th scope="col" class="compare__us">PODIUM</th><th scope="col">Bebida deportiva típica</th><th scope="col">Electrolitos importados</th></tr>
         </thead>
         <tbody>
-          <tr><th scope="row">Azúcar por porción</th><td class="compare__us">00 g</td><td>Alta</td><td>Variable</td></tr>
-          <tr><th scope="row">Sodio por porción</th><td class="compare__us">000 mg</td><td>Bajo</td><td>Variable</td></tr>
+          <tr><th scope="row">Azúcar por porción</th><td class="compare__us">Muy pronto</td><td>Alta</td><td>Variable</td></tr>
+          <tr><th scope="row">Sodio por porción</th><td class="compare__us">Muy pronto</td><td>Bajo</td><td>Variable</td></tr>
           <tr><th scope="row">Ligera en el estómago</th><td class="compare__us">Sí</td><td>No siempre</td><td>Depende</td></tr>
           <tr><th scope="row">Formulada en Costa Rica</th><td class="compare__us">Sí, con el CITA-UCR</td><td>No</td><td>No</td></tr>
-          <tr><th scope="row">Precio por porción</th><td class="compare__us">₡000</td><td>₡000</td><td>₡000</td></tr>
+          <tr><th scope="row">Precio por porción</th><td class="compare__us">Muy pronto</td><td>Variable</td><td>Más alto por importación</td></tr>
         </tbody>
       </table>
     </div>
-    <a class="btn btn--navy btn--lg section__cta" href="#precios" data-buy data-track="comparar_comprar">Probar PODIUM</a>
+    <a class="btn btn--navy btn--lg section__cta" href="#lanzamiento" data-track="comparar_avisame">Quiero probarlo</a>
   </section>
 
   <!-- 6 · Cómo se usa. TODO: confirmar dosis -->
@@ -257,7 +301,7 @@
       <h2 class="display section__title" id="uso-title">Tres pasos</h2>
     </div>
     <ol class="steps">
-      <li class="step"><div class="step__num">01</div><h3 class="step__title">Mezcla</h3><p class="step__text">Una porción en 500 ml de agua fría.</p></li>
+      <li class="step"><div class="step__num">01</div><h3 class="step__title">Mezcla</h3><p class="step__text">Una porción en agua fría. La medida exacta viene en el empaque.</p></li>
       <li class="step"><div class="step__num">02</div><h3 class="step__title">Agita</h3><p class="step__text">Se disuelve en segundos, sin grumos.</p></li>
       <li class="step"><div class="step__num">03</div><h3 class="step__title">Hidrátate</h3><p class="step__text">Antes, durante o después de entrenar.</p></li>
     </ol>
@@ -270,16 +314,29 @@
       <h2 class="display section__title" id="deportes-title">Constancia diaria</h2>
       <p>Para deportistas constantes que entrenan a diario e invierten de forma inteligente en su rendimiento.</p>
     </div>
+    <!-- TODO (fotos): las tarjetas son ilustraciones de marca; reemplazar por fotos de atletas cuando existan -->
     <div class="sports">
-      <div class="sport"><div class="ph sport__media">foto · Running</div><h3 class="display sport__name">Running</h3></div>
-      <div class="sport"><div class="ph sport__media">foto · Ciclismo</div><h3 class="display sport__name">Ciclismo</h3></div>
-      <div class="sport"><div class="ph sport__media">foto · Hiking</div><h3 class="display sport__name">Hiking</h3></div>
-      <div class="sport"><div class="ph sport__media">foto · Gimnasio</div><h3 class="display sport__name">Gimnasio</h3></div>
+      <div class="sport"><div class="sport__art sport__art--navy" aria-hidden="true"><span class="sport__num">01</span><span class="sport__fig">42K</span><span class="sport__cap">Distancia maratón</span><img class="sport__logo" src="assets/logo-podium-ice.webp" alt="" width="92" height="14" loading="lazy"></div><h3 class="display sport__name">Running</h3></div>
+      <div class="sport"><div class="sport__art sport__art--cyan" aria-hidden="true"><span class="sport__num">02</span><span class="sport__fig">100 KM</span><span class="sport__cap">Gran fondo</span><img class="sport__logo" src="assets/logo-podium-navy.webp" alt="" width="92" height="14" loading="lazy"></div><h3 class="display sport__name">Ciclismo</h3></div>
+      <div class="sport"><div class="sport__art sport__art--ice" aria-hidden="true"><span class="sport__num">03</span><span class="sport__fig">3.821 M</span><span class="sport__cap">Cima del Chirripó</span><img class="sport__logo" src="assets/logo-podium-navy.webp" alt="" width="92" height="14" loading="lazy"></div><h3 class="display sport__name">Hiking</h3></div>
+      <div class="sport"><div class="sport__art sport__art--ink" aria-hidden="true"><span class="sport__num">04</span><span class="sport__fig">1RM</span><span class="sport__cap">Tu mejor marca</span><img class="sport__logo" src="assets/logo-podium-ice.webp" alt="" width="92" height="14" loading="lazy"></div><h3 class="display sport__name">Gimnasio</h3></div>
     </div>
   </section>
 
-  <!-- 8 · Reseñas. TODO: SOLO reseñas reales (nombre, deporte y foto con permiso). No publicar testimonios inventados. -->
-  <section class="section resenas" id="resenas" aria-labelledby="resenas-title">
+  <!-- Banda de marca -->
+  <div class="band" aria-hidden="true">
+    <div class="band__track">
+      <span class="band__item"><img src="assets/logo-podium-ice.webp" alt="" width="118" height="18" loading="lazy"><span>Muy pronto</span></span>
+      <span class="band__item"><img src="assets/logo-podium-ice.webp" alt="" width="118" height="18" loading="lazy"><span>Hecho en Costa Rica</span></span>
+      <span class="band__item"><img src="assets/logo-podium-ice.webp" alt="" width="118" height="18" loading="lazy"><span>Hidratación sin pesadez</span></span>
+      <span class="band__item"><img src="assets/logo-podium-ice.webp" alt="" width="118" height="18" loading="lazy"><span>Muy pronto</span></span>
+      <span class="band__item"><img src="assets/logo-podium-ice.webp" alt="" width="118" height="18" loading="lazy"><span>Hecho en Costa Rica</span></span>
+      <span class="band__item"><img src="assets/logo-podium-ice.webp" alt="" width="118" height="18" loading="lazy"><span>Hidratación sin pesadez</span></span>
+    </div>
+  </div>
+
+  <!-- 8 · Reseñas: OCULTA temporalmente (quitar el atributo hidden cuando haya reseñas reales). No publicar testimonios inventados. -->
+  <section class="section resenas" id="resenas" aria-labelledby="resenas-title" hidden>
     <div class="section__head">
       <div class="kicker">Reseñas</div>
       <h2 class="display section__title" id="resenas-title">Lo dicen en la ruta</h2>
@@ -291,7 +348,7 @@
     </div>
   </section>
 
-  <!-- 9 · Precios / paquetes. TODO: precios reales y enlaces de compra -->
+  <!-- 9 · Precios / paquetes. TODO: precios reales y enlaces de compra (hoy: "Muy pronto" + lista de lanzamiento) -->
   <section class="section precios" id="precios" aria-labelledby="precios-title">
     <div class="section__head">
       <div class="kicker">Precios</div>
@@ -300,25 +357,25 @@
     <div class="plans">
       <article class="plan">
         <h3 class="plan__name">1 caja</h3>
-        <p class="plan__desc">Para probar. 00 porciones.</p>
-        <div class="plan__price">₡00.000</div>
-        <div class="plan__unit">₡000 por porción</div>
-        <a class="btn btn--outline-plan btn--lg" href="#" data-buy data-track="plan_1">Comprar</a>
+        <p class="plan__desc">Para probar.</p>
+        <div class="plan__price soon">Muy pronto</div>
+        <div class="plan__unit">Precio de lanzamiento</div>
+        <a class="btn btn--outline-plan btn--lg" href="#lanzamiento" data-track="plan_1_avisame">Avísame</a>
       </article>
       <article class="plan plan--featured">
-        <div class="plan__badge">Más vendido</div>
+        <div class="plan__badge">Recomendado</div>
         <h3 class="plan__name">Pack mensual</h3>
-        <p class="plan__desc">3 cajas, un mes de entrenos. 00 porciones.</p>
-        <div class="plan__price">₡00.000</div>
-        <div class="plan__unit">₡000 por porción · ahorras 00%</div>
-        <a class="btn btn--cyan btn--lg" href="#" data-buy data-track="plan_pack">Comprar pack</a>
+        <p class="plan__desc">Un mes de entrenos, al mejor precio por porción.</p>
+        <div class="plan__price soon">Muy pronto</div>
+        <div class="plan__unit">Precio de lanzamiento</div>
+        <a class="btn btn--cyan btn--lg" href="#lanzamiento" data-track="plan_pack_avisame">Avísame</a>
       </article>
       <article class="plan">
         <h3 class="plan__name">Suscripción</h3>
         <p class="plan__desc">Te llega cada mes. Pausa o cancela cuando quieras.</p>
-        <div class="plan__price">-15%</div>
-        <div class="plan__unit">sobre el precio de cada envío</div>
-        <a class="btn btn--outline-plan btn--lg" href="#" data-buy data-track="plan_suscripcion">Suscribirme</a>
+        <div class="plan__price soon">Muy pronto</div>
+        <div class="plan__unit">Con descuento en cada envío</div>
+        <a class="btn btn--outline-plan btn--lg" href="#lanzamiento" data-track="plan_suscripcion_avisame">Avísame</a>
       </article>
     </div>
   </section>
@@ -351,11 +408,11 @@
       </details>
       <details class="faq__item">
         <summary class="faq__q">¿Cómo se prepara?</summary>
-        <div class="faq__a"><p>Mezcla una porción en 500 ml de agua fría y agita hasta disolver.</p></div>
+        <div class="faq__a"><p>Mezcla una porción en agua fría y agita hasta disolver. La medida exacta viene indicada en el empaque.</p></div>
       </details>
       <details class="faq__item">
         <summary class="faq__q">¿Tiene azúcar?</summary>
-        <div class="faq__a"><p>Cada porción aporta 00 g de carbohidratos, mucho menos que una bebida deportiva típica, para que te hidrate sin caerte pesado.</p></div>
+        <div class="faq__a"><p>Publicaremos la información nutricional completa muy pronto. Está formulado para hidratarte sin caerte pesado, con mucho menos azúcar que una bebida deportiva típica.</p></div>
       </details>
       <details class="faq__item">
         <summary class="faq__q">¿En qué se diferencia de un suero oral o una bebida deportiva?</summary>
@@ -379,7 +436,7 @@
       </details>
       <details class="faq__item">
         <summary class="faq__q">¿Dónde puedo comprar PODIUM?</summary>
-        <div class="faq__a"><p>En esta página o por WhatsApp. Pronto también en tiendas y puntos de venta en Costa Rica.</p></div>
+        <div class="faq__a"><p>Muy pronto, en esta página y por WhatsApp. Únete a la lista de lanzamiento y te avisamos primero.</p></div>
       </details>
     </div>
   </section>
@@ -399,6 +456,7 @@
 
     <div class="purpose">
       <article class="purpose__card purpose__card--brand">
+        <img class="purpose__logo" src="assets/logo-podium-cyan.webp" alt="" width="105" height="16" loading="lazy">
         <h3 class="kicker">Misión</h3>
         <p>Darle a cada deportista constante una hidratación precisa, ligera y respaldada por ciencia, formulada en Costa Rica y a un precio justo.</p>
       </article>
@@ -422,20 +480,23 @@
   </section>
 
   <!-- 13 · CTA final -->
-  <section class="section cta" id="comprar" aria-labelledby="cta-title">
-    <h2 class="display cta__title" id="cta-title">Entrena hoy.<br><span class="accent">Hidrátate bien.</span></h2>
+  <section class="section cta" id="lanzamiento" aria-labelledby="cta-title">
+    <img class="cta__watermark" src="assets/logo-podium-ice-lg.webp" alt="" width="1310" height="200" loading="lazy" aria-hidden="true">
+    <div class="cta__head">
+      <div class="soon soon--pill">Muy pronto</div>
+      <h2 class="display cta__title" id="cta-title">Entrena hoy.<br><span class="accent">Hidrátate bien.</span></h2>
+    </div>
     <div class="cta__actions">
-      <div class="cta__buttons">
-        <a class="btn btn--cyan btn--xl" href="#precios" data-buy data-track="cta_comprar">Comprar ahora</a>
-        <a class="btn btn--xl btn--outline btn--outline-white" href="#" data-wa data-track="cta_whatsapp">WhatsApp</a>
-      </div>
       <form class="subscribe" id="subscribe">
-        <label class="subscribe__label" for="mail">Recibe novedades y un descuento en tu primera compra</label>
+        <label class="subscribe__label" for="mail">Únete a la lista de lanzamiento y sé de los primeros en probarlo</label>
         <div class="subscribe__row">
           <input class="subscribe__input" id="mail" name="email" type="email" required placeholder="tu@correo.com" autocomplete="email">
-          <button class="subscribe__btn" type="submit">Suscribirme</button>
+          <button class="subscribe__btn" type="submit">Avísame</button>
         </div>
       </form>
+      <div class="cta__buttons">
+        <a class="btn btn--xl btn--outline btn--outline-white" href="#" data-wa data-track="cta_whatsapp">Escríbenos por WhatsApp</a>
+      </div>
     </div>
   </section>
 </main>
@@ -464,14 +525,14 @@
   </div>
   <div class="footer__bottom">
     <div class="footer__text">Formulado en Costa Rica · CITA-UCR · FDA · FSSC 22000</div>
-    <div class="footer__text">© <span id="year">2026</span> PODIUM</div>
+    <div class="footer__text">© <span id="year">2026</span> PODIUM · Lanzamiento muy pronto</div>
   </div>
 </footer>
 
 <!-- Barra fija de compra (móvil) -->
 <div class="buybar" id="buybar" aria-hidden="true">
-  <div class="buybar__price">₡00.000</div>
-  <a class="btn btn--cyan buybar__btn" href="#precios" data-buy data-track="buybar_comprar" tabindex="-1">Comprar</a>
+  <div class="buybar__price">Muy pronto</div>
+  <a class="btn btn--cyan buybar__btn" href="#lanzamiento" data-track="buybar_avisame" tabindex="-1">Avísame</a>
   <a class="buybar__wa" href="#" data-wa data-track="buybar_whatsapp" tabindex="-1">WhatsApp</a>
 </div>
 
