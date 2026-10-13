@@ -116,7 +116,9 @@ a:hover { color: var(--podium-cyan); }
   gap: 24px;
   flex-wrap: wrap;
 }
-.nav__logo { height: 20px; display: block; }
+.nav__brand { display: block; color: var(--podium-navy); }
+.nav__brand:hover { color: var(--podium-navy); }
+.nav__logo { height: 24px; width: auto; display: block; }
 .nav__links {
   display: flex;
   align-items: center;
@@ -417,7 +419,9 @@ a:hover { color: var(--podium-cyan); }
   transition: color var(--dur-fast) var(--ease-out);
 }
 .social__link:hover { color: var(--podium-cyan); }
-.footer__logo { height: 16px; display: block; }
+.footer__brand { display: flex; flex-direction: column; gap: 10px; }
+.footer__logo { height: 24px; width: 142px; display: block; color: var(--podium-white); }
+.footer__tagline { font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--podium-cyan); }
 .footer__text { font-size: 13px; font-weight: 500; }
 
 @media (prefers-reduced-motion: reduce) {
@@ -690,3 +694,19 @@ h3 { margin: 0; }
   pointer-events: none;
 }
 .cta__head { display: flex; flex-direction: column; gap: 20px; }
+
+/* =================== Placa Podio (guía de uso v1) ===================
+   Reglas: no rotar, no deformar, sin sombras ni efectos, nunca dentro de un círculo.
+   Área de respeto = grosor del marco (~20% del lado). Mínimos: placa 48px, horizontal 140px de ancho. */
+:root { --podium-black: #111111; }
+.symbol {
+  display: flex; align-items: center; gap: clamp(24px, 4vw, 48px); flex-wrap: wrap;
+  background: var(--podium-white); border: 1px solid var(--border-subtle);
+  padding: clamp(28px, 4vw, 48px);
+}
+.symbol__placa { flex: none; color: var(--podium-navy); width: clamp(88px, 10vw, 120px); height: auto; aspect-ratio: 1; margin: 4px; }
+.symbol__text { flex: 1 1 320px; display: flex; flex-direction: column; gap: 10px; }
+.symbol__title { font-size: 28px; color: var(--podium-navy); }
+.symbol__text p { margin: 0; font-size: 16px; line-height: 1.6; color: var(--podium-ink); max-width: 640px; }
+.symbol__text .symbol__tagline { font-weight: 800; font-style: italic; text-transform: uppercase; color: var(--podium-cyan); letter-spacing: .02em; }
+.cta__placa { color: var(--podium-white); width: 72px; height: 72px; margin-bottom: 4px; }

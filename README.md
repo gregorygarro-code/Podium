@@ -13,6 +13,13 @@ En `main.js`, objeto `CONFIG`:
 
 Cada clic en un botón con `data-track` se envía a `window.dataLayer` como `cta_click`, listo para GA4 o Google Tag Manager.
 
+## Marca
+Los logos vienen de la *Guía de uso · Placa Podio* (v1, octubre 2026), en vector:
+- En la página están como símbolos SVG al inicio del `<body>`: `#placa`, `#placa-sm` (corte pequeño), `#logo-h` (horizontal) y `#logo-v` (apilado). Toman el color de `color` en CSS.
+- Archivos sueltos en `assets/marca/` y favicons en `assets/`.
+- Reglas: horizontal en el encabezado (mín. 140 px de ancho), apilado y centrado en empaques, placa sola en sellos, corte pequeño como favicon. No rotar, no deformar, sin sombras, nunca dentro de un círculo.
+- Lema: "Ciencia para tu constancia".
+
 ## Modo prelanzamiento
 Mientras no haya producto a la venta, precios, fórmula y planes muestran "Muy pronto" y los botones llevan a la lista de lanzamiento (`#lanzamiento`).
 La sección de reseñas está oculta con el atributo `hidden`; quitarlo cuando haya reseñas reales.
