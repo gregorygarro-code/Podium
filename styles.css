@@ -711,3 +711,30 @@ h3 { margin: 0; }
 .symbol__text p { margin: 0; font-size: 16px; line-height: 1.6; color: var(--podium-ink); max-width: 640px; }
 .symbol__text .symbol__tagline { font-weight: 800; font-style: italic; text-transform: uppercase; color: var(--podium-cyan); letter-spacing: .02em; }
 .cta__placa { color: var(--podium-white); width: 72px; height: 72px; margin-bottom: 4px; }
+
+/* =================== Merch =================== */
+.merch { display: flex; flex-direction: column; gap: 40px; border-top: 1px solid var(--border-subtle); }
+.merch .section__head { max-width: 720px; }
+.merch .section__head p { margin: 0; font-size: 18px; line-height: 1.5; font-weight: 500; text-wrap: pretty; }
+.merch__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 12px; }
+.merch__item { display: flex; flex-direction: column; gap: 8px; }
+.merch__art { position: relative; overflow: hidden; aspect-ratio: 1; display: flex; align-items: center; justify-content: center; margin-bottom: 8px; }
+.merch__art::before {
+  content: ""; position: absolute; inset: 0;
+  background: url(assets/pattern-waves-alpha.webp) left center / auto 100% repeat-x;
+  opacity: .12; pointer-events: none;
+}
+.merch__art--cyan { background: var(--podium-cyan); }
+.merch__art--ice  { background: var(--podium-ice); }
+.merch__art--navy { background: var(--podium-navy); }
+.merch__art--cyan::before, .merch__art--ice::before { opacity: .45; }
+.merch__art svg { position: relative; width: 82%; height: auto; display: block; }
+.merch__badge { position: absolute; top: 16px; left: 16px; z-index: 1; }
+.merch__art--navy .merch__badge { background: var(--podium-cyan); }
+.merch__name { font-weight: 900; font-style: italic; text-transform: uppercase; font-size: 24px; color: var(--podium-navy); }
+.merch__desc { margin: 0; font-size: 15px; line-height: 1.5; color: var(--podium-gray-600); }
+.merch__meta { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin: 6px 0 10px; }
+.merch__price { font-family: var(--font-accent); text-transform: uppercase; font-size: 18px; color: var(--podium-cyan); }
+.merch__opts { font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--podium-gray-600); }
+.merch__btn { margin-top: auto; text-align: center; }
+.merch__art--cyan .merch__badge { background: var(--podium-navy); color: var(--podium-ice); }
