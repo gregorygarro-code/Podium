@@ -62,6 +62,19 @@ var CONFIG = {
     hiders.forEach(function (el) { io.observe(el); });
   }
 
+  // Merch: las miniaturas cambian la foto principal de cada producto
+  document.querySelectorAll('.merch__thumb').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var item = btn.closest('.merch__item');
+      var photo = item.querySelector('.merch__photo');
+      var base = btn.getAttribute('data-src');
+      photo.src = base + '-1200.webp';
+      photo.srcset = base + '-640.webp 640w, ' + base + '-1200.webp 1200w';
+      photo.alt = btn.getAttribute('data-alt');
+      item.querySelectorAll('.merch__thumb').forEach(function (b) { b.setAttribute('aria-pressed', String(b === btn)); });
+    });
+  });
+
   document.getElementById('year').textContent = new Date().getFullYear();
 
   // TODO: enviar el correo al proveedor de email marketing; por ahora solo confirma en pantalla.

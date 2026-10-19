@@ -393,7 +393,7 @@
     </div>
   </section>
 
-  <!-- Merch. Ilustraciones originales; logo según la guía de la Placa Podio. TODO: fotos, precios, colores y tallas reales -->
+  <!-- Merch. Mockups en assets/merch (1200 y 640 px). TODO: precios, colores y tallas reales -->
   <section class="section merch" id="merch" aria-labelledby="merch-title">
     <div class="section__head">
       <div class="kicker">Merch</div>
@@ -402,33 +402,24 @@
     </div>
     <div class="merch__grid">
       <article class="merch__item">
-        <div class="merch__art merch__art--cyan">
+        <div class="merch__art merch__art--photo">
           <span class="soon soon--pill merch__badge">Muy pronto</span>
-          <svg viewBox="0 0 300 300" role="img" aria-label="Taza blanca con el logo de PODIUM">
-            <ellipse cx="150" cy="248" rx="80" ry="10" fill="#004173" opacity=".25"/>
-            <path d="M205 122c44 0 44 88 0 88v-16c26 0 26-56 0-56z" fill="#ffffff"/>
-            <rect x="85" y="92" width="122" height="152" rx="12" fill="#ffffff"/>
-            <ellipse cx="146" cy="94" rx="61" ry="11" fill="#ffffff"/>
-            <ellipse cx="146" cy="95" rx="53" ry="7" fill="#004173"/>
-            <use href="#logo-v" x="116" y="142" width="60" height="40" style="color:#004173"/>
-          </svg>
+          <img class="merch__photo" src="assets/merch/taza-1200.webp" srcset="assets/merch/taza-640.webp 640w, assets/merch/taza-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 33vw" alt="Taza blanca con el logo horizontal de PODIUM sobre una mesa de madera" width="1200" height="670" loading="lazy">
         </div>
+        <div class="merch__thumbs merch__thumbs--empty" aria-hidden="true"></div>
         <h3 class="merch__name">Taza PODIUM</h3>
         <p class="merch__desc">Para el café antes del entreno de la madrugada.</p>
         <div class="merch__meta"><span class="merch__price">Muy pronto</span><span class="merch__opts">Blanco</span></div>
         <a class="btn btn--outline-plan btn--lg merch__btn" href="#lanzamiento" data-track="merch_taza_avisame">Avísame</a>
       </article>
       <article class="merch__item">
-        <div class="merch__art merch__art--ice">
+        <div class="merch__art merch__art--photo">
           <span class="soon soon--pill merch__badge">Muy pronto</span>
-          <svg viewBox="0 0 300 300" role="img" aria-label="Gorra azul con la placa de PODIUM">
-            <ellipse cx="150" cy="240" rx="98" ry="9" fill="#004173" opacity=".18"/>
-            <path d="M68 190c0-92 164-92 164 0z" fill="#004173"/>
-            <path d="M112 128c-10 18-12 40-10 62M188 128c10 18 12 40 10 62" stroke="#002f54" stroke-width="2" fill="none"/>
-            <circle cx="150" cy="116" r="6" fill="#002f54"/>
-            <path d="M52 190q98-16 196 0q6 30-98 36q-104-6-98-36z" fill="#002f54"/>
-            <use href="#placa" x="128" y="134" width="44" height="44" style="color:#ffffff"/>
-          </svg>
+          <img class="merch__photo" src="assets/merch/gorra-placa-1200.webp" srcset="assets/merch/gorra-placa-640.webp 640w, assets/merch/gorra-placa-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 33vw" alt="Gorra azul con la placa de PODIUM bordada en blanco" width="1200" height="670" loading="lazy">
+        </div>
+        <div class="merch__thumbs" role="group" aria-label="Más fotos de la gorra">
+          <button class="merch__thumb" type="button" aria-pressed="true" data-src="assets/merch/gorra-placa" data-alt="Gorra azul con la placa de PODIUM bordada en blanco"><img src="assets/merch/gorra-placa-640.webp" alt="" width="640" height="357" loading="lazy"><span class="sr-only">Ver foto 1</span></button>
+          <button class="merch__thumb" type="button" aria-pressed="false" data-src="assets/merch/gorra-logotipo" data-alt="Gorra azul con el logotipo PODIUM bordado en blanco"><img src="assets/merch/gorra-logotipo-640.webp" alt="" width="640" height="357" loading="lazy"><span class="sr-only">Ver foto 2</span></button>
         </div>
         <h3 class="merch__name">Gorra PODIUM</h3>
         <p class="merch__desc">Para el sol de las rutas, de la playa a la montaña.</p>
@@ -436,18 +427,17 @@
         <a class="btn btn--outline-plan btn--lg merch__btn" href="#lanzamiento" data-track="merch_gorra_avisame">Avísame</a>
       </article>
       <article class="merch__item">
-        <div class="merch__art merch__art--navy">
+        <div class="merch__art merch__art--photo">
           <span class="soon soon--pill merch__badge">Muy pronto</span>
-          <svg viewBox="0 0 300 300" role="img" aria-label="Camiseta blanca con el logo de PODIUM">
-            <ellipse cx="150" cy="262" rx="90" ry="8" fill="#022a4a" opacity=".6"/>
-            <path d="M106 58L74 70 36 106l26 34 24-15v127h128V125l24 15 26-34-38-36-32-12q-14 22-44 22t-44-22z" fill="#ffffff"/>
-            <path d="M106 58q44 34 88 0" stroke="#d6eef7" stroke-width="5" fill="none"/>
-            <use href="#logo-h" x="104" y="112" width="92" height="16" style="color:#004173"/>
-          </svg>
+          <img class="merch__photo" src="assets/merch/camiseta-mesa-1200.webp" srcset="assets/merch/camiseta-mesa-640.webp 640w, assets/merch/camiseta-mesa-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 33vw" alt="Camiseta azul con el logo apilado de PODIUM en blanco" width="1200" height="670" loading="lazy">
+        </div>
+        <div class="merch__thumbs" role="group" aria-label="Más fotos de la camiseta">
+          <button class="merch__thumb" type="button" aria-pressed="true" data-src="assets/merch/camiseta-mesa" data-alt="Camiseta azul con el logo apilado de PODIUM en blanco"><img src="assets/merch/camiseta-mesa-640.webp" alt="" width="640" height="357" loading="lazy"><span class="sr-only">Ver foto 1</span></button>
+          <button class="merch__thumb" type="button" aria-pressed="false" data-src="assets/merch/camiseta-frente-espalda" data-alt="Camiseta azul: logotipo PODIUM al frente y placa en la espalda"><img src="assets/merch/camiseta-frente-espalda-640.webp" alt="" width="640" height="357" loading="lazy"><span class="sr-only">Ver foto 2</span></button>
         </div>
         <h3 class="merch__name">Camiseta PODIUM</h3>
         <p class="merch__desc">Para entrenar, competir o simplemente llevar la marca.</p>
-        <div class="merch__meta"><span class="merch__price">Muy pronto</span><span class="merch__opts">Tallas muy pronto</span></div>
+        <div class="merch__meta"><span class="merch__price">Muy pronto</span><span class="merch__opts">Azul Profundo</span></div>
         <a class="btn btn--outline-plan btn--lg merch__btn" href="#lanzamiento" data-track="merch_camiseta_avisame">Avísame</a>
       </article>
     </div>
