@@ -788,3 +788,14 @@ h3 { margin: 0; }
 .legal__table th { font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--podium-gray-600); }
 .legal__table code { font-size: 12px; background: var(--podium-wave-2); padding: 1px 4px; border-radius: 3px; }
 @media (max-width: 560px) { .legal__card { grid-template-columns: 1fr; } }
+
+/* Banderas de Costa Rica */
+.flag { display: inline-block; width: 20px; height: 12px; vertical-align: -1px; border-radius: 2px; box-shadow: 0 0 0 1px rgba(0,0,0,.12); flex: none; }
+.announce .flag { width: 18px; height: 11px; margin-right: 4px; }
+.microtrust .microtrust__cr::before { content: none; }
+.microtrust__cr .flag { margin-right: 4px; }
+.trust__cr { display: inline-flex; align-items: center; gap: 8px; }
+.compare__us .flag { margin-right: 6px; }
+.band__item .flag--band { width: 24px; height: 14px; }
+.value__title .flag { margin-left: 6px; vertical-align: 0; }
+.footer__text .flag { margin-right: 6px; }
