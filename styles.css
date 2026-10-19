@@ -727,8 +727,10 @@ h3 { margin: 0; }
 .merch__art--cyan { background: var(--podium-cyan); }
 .merch__art--ice  { background: var(--podium-ice); }
 .merch__art--navy { background: var(--podium-navy); }
+.merch__art--light { background: var(--podium-wave-2); }
+.merch__art--light::before { background-image: url(assets/pattern-waves.webp); opacity: .8; }
 .merch__art--cyan::before, .merch__art--ice::before { opacity: .45; }
-.merch__art svg { position: relative; width: 82%; height: auto; display: block; }
+.merch__art img { position: relative; width: 100%; height: 100%; object-fit: contain; display: block; }
 .merch__badge { position: absolute; top: 16px; left: 16px; z-index: 1; }
 .merch__art--navy .merch__badge { background: var(--podium-cyan); }
 .merch__name { font-weight: 900; font-style: italic; text-transform: uppercase; font-size: 24px; color: var(--podium-navy); }
@@ -737,4 +739,4 @@ h3 { margin: 0; }
 .merch__price { font-family: var(--font-accent); text-transform: uppercase; font-size: 18px; color: var(--podium-cyan); }
 .merch__opts { font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--podium-gray-600); }
 .merch__btn { margin-top: auto; text-align: center; }
-.merch__art--cyan .merch__badge { background: var(--podium-navy); color: var(--podium-ice); }
+.merch__art--cyan .merch__badge, .merch__art--ice .merch__badge, .merch__art--light .merch__badge { background: var(--podium-navy); color: var(--podium-ice); }
