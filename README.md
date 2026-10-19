@@ -25,6 +25,9 @@ Mientras no haya producto a la venta, precios, fórmula y planes muestran "Muy p
 La sección de reseñas está oculta con el atributo `hidden`; quitarlo cuando haya reseñas reales.
 El empaque del hero y las tarjetas de deportes son ilustraciones de marca originales; reemplazarlas por fotos reales cuando existan.
 
+## Páginas legales
+`privacidad.html`, `terminos.html` y `cookies.html` son páginas separadas, enlazadas desde el pie de página. Son un borrador para el prelanzamiento basado en la Ley 8968 (datos personales) y la Ley 7472 (consumidor): deben revisarse con un abogado y completarse con la razón social, cédula jurídica y domicilio antes de vender.
+
 ## Pendientes (buscar `TODO` en el código)
 - Precio, porciones y fórmula real (mg por porción).
 - Fotos de producto y de deportes.
