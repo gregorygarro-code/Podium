@@ -1,6 +1,6 @@
 // ---- Configuración: completar cuando estén definidos ----
 var CONFIG = {
-  whatsapp: '',   // TODO: número con código de país, sin + ni espacios. Ej.: '50688887777'
+  whatsapp: '50672541784',   // número con código de país (506), sin + ni espacios
   storeUrl: ''    // TODO: URL de la tienda o checkout. Vacío = los planes abren WhatsApp
 };
 

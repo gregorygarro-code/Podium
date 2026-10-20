@@ -8,7 +8,7 @@ Importar el repo en vercel.com/new, framework "Other", sin build command.
 
 ## Configuración
 En `main.js`, objeto `CONFIG`:
-- `whatsapp`: número con código de país (ej. `50688887777`).
+- `whatsapp`: `50672541784` (WhatsApp 7254-1784).
 - `storeUrl`: URL de la tienda o checkout. Si está vacío, los botones de los planes abren WhatsApp con el plan elegido.
 
 Cada clic en un botón con `data-track` se envía a `window.dataLayer` como `cta_click`, listo para GA4 o Google Tag Manager.
