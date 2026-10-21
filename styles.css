@@ -799,3 +799,7 @@ h3 { margin: 0; }
 .band__item .flag--band { width: 24px; height: 14px; }
 .value__title .flag { margin-left: 6px; vertical-align: 0; }
 .footer__text .flag { margin-right: 6px; }
+
+/* Píxel de medición: se carga pero no ocupa espacio */
+.tracking-pixel { position: absolute; width: 1px; height: 1px; left: 0; bottom: 0; opacity: 0; pointer-events: none; }
+.legal__body .table-wrap { margin-bottom: 16px; }
