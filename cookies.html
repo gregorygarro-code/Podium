@@ -7,6 +7,18 @@
 <meta name="description" content="Qué cookies usa el sitio de PODIUM, para qué sirven y cómo controlarlas desde tu navegador.">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#004173">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_CR">
+<meta property="og:site_name" content="PODIUM">
+<meta property="og:title" content="Política de cookies | PODIUM">
+<meta property="og:description" content="Qué cookies usa el sitio de PODIUM, para qué sirven y cómo controlarlas desde tu navegador.">
+<meta name="twitter:card" content="summary_large_image">
+<!-- TODO (dominio): cambiar a URL absoluta, ej. https://DOMINIO/assets/og-image.jpg -->
+<meta property="og:image" content="assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="PODIUM: hidratación sin pesadez. Electrolitos en polvo hechos en Costa Rica.">
+<meta name="twitter:image" content="assets/og-image.jpg">
 <!-- TODO (dominio): <link rel="canonical" href="https://DOMINIO/cookies"> -->
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
@@ -27,7 +39,7 @@
   <header class="legal__head">
     <div class="kicker">Documentos legales</div>
     <h1 class="display legal__title">Política de cookies</h1>
-    <p class="legal__meta">Última actualización: 21 de octubre de 2026</p>
+    <p class="legal__meta">Última actualización: 26 de octubre de 2026</p>
     <nav class="legal__tabs" aria-label="Documentos legales">
       <a class="legal__tab" href="privacidad.html">Política de privacidad</a>
       <a class="legal__tab" href="terminos.html">Términos y condiciones</a>
@@ -52,8 +64,12 @@
     </div>
     <p>El formulario de la lista de lanzamiento no guarda nada en tu navegador.</p>
 
+    <h2 id="configurar">Tu consentimiento</h2>
+    <p>La primera vez que entras al sitio te preguntamos si aceptas la medición de visitas. <strong>Metricool solo se activa si aceptas</strong>; si rechazas, el sitio funciona igual y no se envía ningún dato a herramientas de medición. Guardamos tu elección en tu navegador durante 6 meses.</p>
+    <p><button type="button" class="btn btn--navy legal__btn" data-cookie-settings>Cambiar mi elección</button></p>
+
     <h2>3. Cookies que podríamos usar más adelante</h2>
-    <p>Si en el futuro activamos alguna de estas herramientas, actualizaremos esta política y, en el caso de las cookies que no son necesarias, te pediremos tu consentimiento antes de instalarlas:</p>
+    <p>Si en el futuro activamos alguna de estas herramientas, actualizaremos esta política. Las de medición y publicidad solo se activarán con tu consentimiento, desde el mismo aviso:</p>
     <div class="table-wrap">
       <table class="legal__table">
         <thead><tr><th scope="col">Tipo</th><th scope="col">Ejemplo</th><th scope="col">Para qué sirve</th><th scope="col">Duración aprox.</th></tr></thead>
@@ -96,6 +112,7 @@
       <a href="privacidad.html">Política de privacidad</a>
       <a href="terminos.html">Términos y condiciones</a>
       <a href="cookies.html">Política de cookies</a>
+      <a href="cookies.html#configurar" data-cookie-settings>Configurar cookies</a>
     </nav>
   </div>
   <div class="footer__bottom">
@@ -103,7 +120,6 @@
     <div class="footer__text">© 2026 PODIUM · Ciencia para tu constancia</div>
   </div>
 </footer>
-<!-- Metricool: medición de visitas -->
-<img class="tracking-pixel" src="https://tracker.metricool.com/c3po.jpg?hash=be98a47eeda62c43f621ae17ded043a8" alt="" width="1" height="1" aria-hidden="true">
+<script src="consent.js" defer></script>
 </body>
 </html>

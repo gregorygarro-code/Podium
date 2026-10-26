@@ -11,6 +11,13 @@ En `main.js`, objeto `CONFIG`:
 - `whatsapp`: `50672541784` (WhatsApp 7254-1784).
 - `storeUrl`: URL de la tienda o checkout. Si está vacío, los botones de los planes abren WhatsApp con el plan elegido.
 
+En `consent.js`, objeto `SETTINGS`:
+- `ga4Id`: ID de Google Analytics 4 (`G-…`). Vacío = no se carga.
+- `metricoolPixel`: píxel de Metricool.
+Ambos se cargan solo si la persona acepta en el aviso de cookies (Consent Mode v2 en "denied" por defecto). El enlace "Configurar cookies" del pie de página vuelve a abrir el aviso.
+
+Imagen para compartir en redes: `assets/og-image.jpg` (1200 × 630).
+
 Cada clic en un botón con `data-track` se envía a `window.dataLayer` como `cta_click`, listo para GA4 o Google Tag Manager.
 
 ## Marca

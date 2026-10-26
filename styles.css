@@ -800,6 +800,31 @@ h3 { margin: 0; }
 .value__title .flag { margin-left: 6px; vertical-align: 0; }
 .footer__text .flag { margin-right: 6px; }
 
-/* Píxel de medición: se carga pero no ocupa espacio */
-.tracking-pixel { position: absolute; width: 1px; height: 1px; left: 0; bottom: 0; opacity: 0; pointer-events: none; }
 .legal__body .table-wrap { margin-bottom: 16px; }
+
+/* =================== Aviso de cookies =================== */
+.consent {
+  position: fixed; z-index: 40; left: 16px; right: 16px; bottom: 16px;
+  max-width: 560px; margin-left: auto;
+  background: var(--podium-white); color: var(--podium-ink);
+  border: 1px solid var(--border-subtle); border-top: 3px solid var(--podium-navy);
+  box-shadow: 0 12px 40px -12px rgba(0,65,115,.45);
+  padding: 20px; display: flex; flex-direction: column; gap: 16px;
+}
+.consent[hidden] { display: none; }
+.consent__title { margin: 0 0 6px; font-weight: 900; font-style: italic; text-transform: uppercase; font-size: 18px; color: var(--podium-navy); }
+.consent__text p { margin: 0; font-size: 14px; line-height: 1.55; }
+.consent__text a { font-weight: 700; text-decoration: underline; text-underline-offset: 2px; }
+.consent__actions { display: flex; gap: 8px; }
+.consent__btn {
+  flex: 1; cursor: pointer; border-radius: var(--radius-s);
+  font: italic 800 14px var(--font-body); text-transform: uppercase; letter-spacing: .04em;
+  padding: 13px 16px; border: 2px solid var(--podium-navy);
+  background: var(--podium-navy); color: var(--podium-white);
+  transition: background-color var(--dur-fast) var(--ease-out), color var(--dur-fast) var(--ease-out);
+}
+.consent__btn:hover { background: var(--podium-cyan); border-color: var(--podium-cyan); color: var(--podium-navy); }
+.consent__btn--ghost { background: var(--podium-white); color: var(--podium-navy); }
+.consent__btn--ghost:hover { background: var(--podium-navy); border-color: var(--podium-navy); color: var(--podium-white); }
+@media (max-width: 760px) { body.has-consent .buybar { display: none; } }
+.legal__btn { border: 0; cursor: pointer; font-size: 14px; padding: 12px 20px; }
