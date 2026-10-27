@@ -2,7 +2,7 @@
 // Compartido por todas las páginas. La elección se guarda en el navegador por 6 meses.
 (function () {
   var SETTINGS = {
-    ga4Id: '',  // TODO: ID de medición de Google Analytics 4 (G-XXXXXXXXXX). Vacío = no se carga.
+    ga4Id: 'G-LLPHFFWS0M',  // Google Analytics 4. Vacío = no se carga.
     metricoolPixel: 'https://tracker.metricool.com/c3po.jpg?hash=be98a47eeda62c43f621ae17ded043a8'
   };
   var KEY = 'podium-consent';
@@ -41,7 +41,7 @@
       s.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(SETTINGS.ga4Id);
       document.head.appendChild(s);
       gtag('js', new Date());
-      gtag('config', SETTINGS.ga4Id);
+      gtag('config', SETTINGS.ga4Id, { anonymize_ip: true });
     }
   }
 

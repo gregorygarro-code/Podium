@@ -12,7 +12,7 @@ En `main.js`, objeto `CONFIG`:
 - `storeUrl`: URL de la tienda o checkout. Si está vacío, los botones de los planes abren WhatsApp con el plan elegido.
 
 En `consent.js`, objeto `SETTINGS`:
-- `ga4Id`: ID de Google Analytics 4 (`G-…`). Vacío = no se carga.
+- `ga4Id`: `G-LLPHFFWS0M` (Google Analytics 4). Eventos: `cta_click`, `contact` (WhatsApp), `select_content` (redes) y `generate_lead` (lista de lanzamiento).
 - `metricoolPixel`: píxel de Metricool.
 Ambos se cargan solo si la persona acepta en el aviso de cookies (Consent Mode v2 en "denied" por defecto). El enlace "Configurar cookies" del pie de página vuelve a abrir el aviso.
 

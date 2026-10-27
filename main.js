@@ -36,11 +36,18 @@ var CONFIG = {
     }
   });
 
-  // Medición: cada clic en [data-track] se envía a dataLayer (GA4 / Google Tag Manager)
+  // Medición: eventos de Google Analytics 4 (solo se envían si la persona aceptó cookies; ver consent.js)
   window.dataLayer = window.dataLayer || [];
+  function track(name, params) {
+    if (typeof window.gtag === 'function') window.gtag('event', name, params || {});
+  }
   document.addEventListener('click', function (e) {
     var el = e.target.closest('[data-track]');
-    if (el) window.dataLayer.push({ event: 'cta_click', cta: el.getAttribute('data-track') });
+    if (!el) return;
+    var cta = el.getAttribute('data-track');
+    track('cta_click', { cta: cta });
+    if (/whatsapp/.test(cta)) track('contact', { method: 'whatsapp', cta: cta });
+    if (/instagram|facebook/.test(cta)) track('select_content', { content_type: 'social', item_id: cta });
   });
 
   // Barra fija en móvil: aparece cuando el hero sale de pantalla
@@ -82,6 +89,6 @@ var CONFIG = {
   form.addEventListener('submit', function (e) {
     e.preventDefault();
     form.querySelector('button').textContent = '¡Listo!';
-    window.dataLayer.push({ event: 'waitlist_signup' });
+    track('generate_lead', { method: 'lista_lanzamiento' });
   });
 })();
