@@ -8,19 +8,21 @@
 <meta name="robots" content="index, follow">
 <meta name="google-site-verification" content="wMSbnOp2IHzwEkgHdGr3Lgs2tz8o3hW3Zb-WgUZigt8">
 <meta name="theme-color" content="#004173">
-<!-- TODO (dominio): agregar <link rel="canonical" href="https://DOMINIO/"> y og:url -->
+<link rel="canonical" href="https://podium-tan.vercel.app/">
+<link rel="alternate" hreflang="es-CR" href="https://podium-tan.vercel.app/">
+<link rel="alternate" hreflang="x-default" href="https://podium-tan.vercel.app/">
+<meta property="og:url" content="https://podium-tan.vercel.app/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_CR">
 <meta property="og:site_name" content="PODIUM">
 <meta property="og:title" content="PODIUM · Electrolitos en polvo hechos en Costa Rica">
 <meta property="og:description" content="Ciencia para tu constancia. Hidratación deportiva sin pesadez, formulada con el CITA-UCR y producida bajo estándares FDA y FSSC 22000.">
 <meta name="twitter:card" content="summary_large_image">
-<!-- TODO (dominio): cambiar a URL absoluta, ej. https://DOMINIO/assets/og-image.jpg -->
-<meta property="og:image" content="assets/og-image.jpg">
+<meta property="og:image" content="https://podium-tan.vercel.app/assets/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="PODIUM: hidratación sin pesadez. Electrolitos en polvo hechos en Costa Rica.">
-<meta name="twitter:image" content="assets/og-image.jpg">
+<meta name="twitter:image" content="https://podium-tan.vercel.app/assets/og-image.jpg">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
@@ -31,7 +33,11 @@
 {
   "@context": "https://schema.org",
   "@type": "Organization",
+  "@id": "https://podium-tan.vercel.app/#organizacion",
   "name": "PODIUM",
+  "url": "https://podium-tan.vercel.app/",
+  "logo": "https://podium-tan.vercel.app/assets/logo-512.png",
+  "image": "https://podium-tan.vercel.app/assets/og-image.jpg",
   "slogan": "Ciencia para tu constancia",
   "description": "Hidratación deportiva científica en polvo, formulada en Costa Rica con base del CITA-UCR y producida bajo estándares FDA y FSSC 22000.",
   "email": "podium.hd@gmail.com",
@@ -44,7 +50,20 @@
   "areaServed": { "@type": "Country", "name": "Costa Rica" }
 }
 </script>
-<!-- TODO (precio): activar cuando haya precio y URL definitivos.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://podium-tan.vercel.app/#sitio",
+  "name": "PODIUM",
+  "url": "https://podium-tan.vercel.app/",
+  "inLanguage": "es-CR",
+  "publisher": {
+    "@id": "https://podium-tan.vercel.app/#organizacion"
+  }
+}
+</script>
+<!-- TODO (precio): activar cuando haya precio definitivo.
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -52,13 +71,13 @@
   "name": "PODIUM Hidratación Deportiva en Polvo",
   "brand": { "@type": "Brand", "name": "PODIUM" },
   "description": "Electrolitos en polvo formulados en Costa Rica con base del CITA-UCR.",
-  "image": "https://DOMINIO/assets/producto.webp",
+  "image": "https://podium-tan.vercel.app/assets/og-image.jpg",
   "offers": {
     "@type": "Offer",
     "price": "00000",
     "priceCurrency": "CRC",
     "availability": "https://schema.org/InStock",
-    "url": "https://DOMINIO/"
+    "url": "https://podium-tan.vercel.app/"
   }
 }
 </script>

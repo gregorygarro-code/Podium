@@ -40,6 +40,5 @@ El empaque del hero y las tarjetas de deportes son ilustraciones de marca origin
 - Fotos de producto y de deportes.
 - Reseñas reales (no publicar testimonios inventados).
 - Confirmar envíos, métodos de pago y garantía.
-- Dominio: canonical, og:url, og:image, sitemap y datos estructurados de producto.
+- Si cambia el dominio (hoy `https://podium-tan.vercel.app`): actualizar canonical, og:url, og:image, `sitemap.xml`, `robots.txt` y los datos estructurados.
 - URLs de redes sociales y páginas de políticas.
-- Favicon.
