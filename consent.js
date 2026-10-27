@@ -55,8 +55,8 @@
     banner.innerHTML =
       '<div class="consent__text">' +
         '<h2 class="consent__title" id="consent-title">Cookies</h2>' +
-        '<p>Usamos herramientas de medición para saber cuántas personas visitan el sitio y de dónde llegan. ' +
-        'Solo las activamos si aceptas. <a href="cookies.html">Política de cookies</a></p>' +
+        '<p>Usamos <strong>Metricool</strong> y <strong>Google Analytics</strong> para saber cuántas personas visitan el sitio ' +
+        'y de dónde llegan. Solo los activamos si aceptas. <a href="cookies.html">Política de cookies</a></p>' +
       '</div>' +
       '<div class="consent__actions">' +
         '<button type="button" class="consent__btn consent__btn--ghost" data-consent="denied">Rechazar</button>' +
